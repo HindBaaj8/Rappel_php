@@ -20,7 +20,7 @@ $technologies = $stmt->fetchAll();
     </tr>
     <?php foreach ($technologies as $t): ?>
     <tr>
-        <td><?= htmlspecialchars($t['nom']) ?></td>
+        <td><?= $t['nom'] ?></td>
         <td><?= $t['nb_projets'] ?></td>
         <td>
             <a href="details_technologie.php?id=<?= $t['id'] ?>">Détails</a> |
